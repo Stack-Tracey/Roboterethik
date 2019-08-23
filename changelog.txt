@@ -1,0 +1,19 @@
+21.07.2016 JK:
+- Misc Quelle als Beispiel f�r's Zitieren von Onlinequellen eingef�gt
+
+12.10.2015 Julian Kalinowski:
+- Encoding aller Dateien auf UTF-8 gestellt
+- inputenc auf UTF-8 gestellt
+
+25.05.2009 Frank Langanke:
+- Preamble in eigene Datei verschoben f�r bessere �bersicht des Hauptdokuments.
+- bibliography=totoc und captions=tableheading f�r veraltete Befehle eingesetzt.
+- Vorspann und Hauptteil werden durch \frontmatter bzw. \mainmatter eingeleitet,
+	dadurch entf�llt manuelles setzen der Seitennummer und des Zahlenstils.
+- Eigene Seitenstildefinition ersetzt durch im KOMA-Paket
+	enthaltenen 'scrheadings'. So angepasst, dass das gleiche Ergebnis rauskommt.
+- Veraltetes encoding isolatin durch latin1 ersetzt.
+- Paket Palatino ersetzt durch Kombination aus mathpazo, helvet, courier,
+	f�r die Begr�ndung siehe 'Das Latex2-S�ndenregister' von Mart Trettin
+- input durch inlcude Befehle ersetzt.
+	

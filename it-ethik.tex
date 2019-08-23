@@ -1,0 +1,60 @@
+\documentclass[13pt,DIV=15,BCOR=10mm,bibliography=totoc,ngerman]{scrbook}
+
+% Import von Paketen und Optionen die das gesamte Dokument betreffen
+% sind in myPreamble.sty ausgelagert.
+\usepackage{myPreamble}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[german]{babel}
+\usepackage{cleveref}
+   
+% Arbeitet man nur an einem Kapitel, wird durch folgenden Befehl nur dieses eingebunden.
+% Spart manuelles auskommentieren von vielen include-Befehlen;
+% hat keine Auswirkung auf input-Befehle
+% \includeonly{kapitel1}
+   
+\begin{document}
+
+% TITELSEITE
+\include{_titlepage}
+
+% VERZEICHNISSE (Inhaltsverzeichnis, Abkürzungen)
+% Vorspann einleiten --> Seitennummerierung römisch
+\frontmatter
+
+% Inhaltsverzeichnis
+\tableofcontents
+\cleardoublepage
+
+% Hauptteil einleiten --> Seitennummerierung wieder arabisch
+\mainmatter
+
+\include{kapitel1}
+\include{kapitel2}
+%\include{kapitel3}
+\include{kapitel4}
+
+%\include{kapitel6}
+%\include{Anhang}
+%\appendix
+
+%\include{kapitel6}
+%\include{kapitel7}
+%\cleardoublepage
+
+%\appendix
+
+% VERZEICHNISSE (Abbildungen, Tabellen)
+% Literatur 
+
+\bibliographystyle{plainnat}
+\bibliography{it-ethik}
+\cleardoublepage
+\appendix
+%\chapter{Anhang}    
+% ERKLÄRUNG
+%\includepdf[pages=-]{Studienprotokoll.pdf}
+%\input{_eidversicherung}
+
+\end{document}
